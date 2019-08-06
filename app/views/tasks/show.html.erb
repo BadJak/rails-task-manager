@@ -1,0 +1,13 @@
+<div class="container mt-5">
+  <h1><%= @task.title %></h1>
+  <div class="tasks p-3 bg-light">
+    <strong>Details:</strong> <%= @task.details %> <br>
+    <%= link_to "Back to tasks", tasks_path %>
+  </div>
+  <div class="add bg-info p-3">
+    <%= link_to "Edit task", edit_path %>
+  </div>
+  <div class="add bg-danger p-3">
+    <%= link_to "Delete task", destroy_path, method: 'delete'  %>
+  </div>
+</div>

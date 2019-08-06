@@ -1,0 +1,16 @@
+<div class="container mt-5">
+  <h1>My tasks</h1>
+  <div class="tasks p-3 bg-light">
+    <% @tasks.each do |task| %>
+      <% if task.completed %>
+      <input type="checkbox" id="task" name="task" disabled checked>
+      <% else %>
+      <input type="checkbox" id="task" name="task" disabled >
+      <% end %>
+      <label for="task"><%= link_to task.title, task_path(task) %></label><br>
+    <% end %>
+  </div>
+  <div class="add bg-info p-3">
+  <%= link_to "Add a task", tasks_new_path  %>
+  </div>
+</div>

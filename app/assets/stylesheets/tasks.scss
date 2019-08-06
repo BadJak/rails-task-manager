@@ -1,0 +1,19 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  color: #ff8a5c;
+}
+
+.add a {
+  text-decoration: none;
+  color: white;
+}
+
+.tasks a {
+  text-decoration: none;
+  color: #3CA2B8;
+}
